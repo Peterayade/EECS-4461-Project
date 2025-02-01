@@ -10,13 +10,21 @@ on:
 
 permissions:
   contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout Repository (Ensure Latest Version)
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # ✅ Ensures the latest commit is pulled
+
+      - name: Pull Latest Changes (Ensure Up-to-Date File)
+        run: |
+          git fetch origin main
+          git reset --hard origin/main  # ✅ Ensures we have the latest version before PDF conversion
 
       - name: Install Pandoc and Dependencies
         run: sudo apt-get install -y pandoc texlive-xetex
@@ -34,7 +42,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git pull origin main --rebase || git reset --hard origin/main  
           git add docs/Deliverable1/*.pdf
-          git commit -m "Auto-generated PDF from Markdown" || echo "No changes to commit"
-          git push origin main --force-with-lease  
+          git commit -m "Auto-generated PDF from latest Markdown" || echo "No changes to commit"
+          git push origin main --force-with-lease
+
