@@ -33,7 +33,9 @@
 ## **Section 2: Relevant Works**
 - Calvaresi, D., Dubovitskaya, A., Taveter, K., Schumacher, M., & Främling, K. (2023). Exploring agent-based chatbots: A systematic literature review. *Journal of Ambient Intelligence and Humanized Computing, 14*(8), 11207–11226. https://doi.org/10.1007/s12652-023-04626-5
 
-- Cai, J., & Wohn, D. Y. (2019). Categorizing live streaming moderation tools: An analysis of Twitch. ResearchGate. https://www.researchgate.net/publication/335806321_Categorizing_Live_Streaming_Moderation_Tools_An_Analysis_of_Twitch
+- Cai, J., & Wohn, D. Y. (2019). Categorizing live streaming moderation tools: An analysis of Twitch. ResearchGate. 
+https://www.researchgate.net/publication/
+335806321_Categorizing_Live_Streaming_Moderation_Tools_An_Analysis_of_Twitch
 
 
 
