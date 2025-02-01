@@ -19,12 +19,12 @@ jobs:
       - name: Checkout Repository (Ensure Latest Version)
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # ✅ Ensures the latest commit is pulled
+          fetch-depth: 0 
 
       - name: Pull Latest Changes (Ensure Up-to-Date File)
         run: |
           git fetch origin main
-          git reset --hard origin/main  # ✅ Ensures we have the latest version before PDF conversion
+          git reset --hard origin/main 
 
       - name: Install Pandoc and Dependencies
         run: sudo apt-get install -y pandoc texlive-xetex
