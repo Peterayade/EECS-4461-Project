@@ -93,4 +93,6 @@ This resource is licensed under a [Creative Commons Attribution Non-Commercial 4
 
 [Original Contract Template](https://uwaterloo.ca/centre-for-teaching-excellence/sites/ca.centre-for-teaching-excellence/files/uploads/files/uwaterloo_sample_group_contract.docx)  
 
+
+
 ---
