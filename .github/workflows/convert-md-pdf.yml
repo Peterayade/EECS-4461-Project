@@ -35,8 +35,13 @@ jobs:
         run: |
           for file in docs/Deliverable1/Team*_TopicIdea.md docs/Deliverable1/Team*_TeamExpectations.md; do
             filename=$(basename "$file" .md)
-            pandoc "$file" -o "docs/Deliverable1/$filename.pdf"
+            pandoc "$file" \
+              --pdf-engine=xelatex \
+              -V geometry:margin=1in \
+              -V fontsize=12pt \
+              -o "docs/Deliverable1/$filename.pdf"
           done
+
 
       - name: Commit and Push PDF
         env:
