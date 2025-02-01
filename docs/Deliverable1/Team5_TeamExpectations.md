@@ -7,9 +7,9 @@ Include group members’ preferred and backup choices for communication and list
 
 | **Name**           | **Preferred Contact Method** | **Back-Up Contact Method** | **Email**                        | **WhatsApp/Phone** |
 |-------------------|---------------------------|---------------------------|----------------------------------|------------------|
-| Mingran Chen  | Discord                   | Email                     | mingranchen1026@gmail.com       | 647-573-5549     |
-| Shenice Thomas | Discord                   | Email                     | shenicethomas97177@gmail.com    | 647-457-6772     |
-| Peter Ayade   | Discord                   | Email                     | ayadepete19@gmail.com           | 647-916-7439     |
+| Mingran Chen  | Discord                   | Email                     | mingranchen1026@gmail.com| 647-573-5549     |
+| Shenice Thomas | Discord                   | Email                     | shenicethomas97177@gmail.com| 647-457-6772     |
+| Peter Ayade   | Discord                   | Email                     | ayadepete19@gmail.com| 647-916-7439     |
 
 ---
 
