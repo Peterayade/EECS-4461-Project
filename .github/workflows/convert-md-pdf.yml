@@ -35,7 +35,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git pull origin main --rebase  # ✅ Pull latest changes first
+          git pull origin main --rebase || git reset --hard origin/main  # ✅ Pull latest changes, reset if needed
           git add docs/Deliverable1/*.pdf
           git commit -m "Auto-generated PDF from Markdown" || echo "No changes to commit"
-          git push origin main
+          git push origin main --force-with-lease  # ✅ Push safely without overwriting others' work
