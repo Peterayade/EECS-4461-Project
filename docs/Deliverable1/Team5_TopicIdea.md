@@ -1,14 +1,13 @@
 # Behind the Chat: Agent-Based Modeling of Twitch Mod Bots vs. Spambots
+# GitHub Repository URL**: <https://github.com/Peterayade/EECS-4461-Project.git>  
 
 ## Team Information
 - **Team Number**: Team 5  
 - **Team Members**:  
-  - Peter Ayade  
-  - Mingran Chen  
-  - Shenice Thomas  
-
-**GitHub Repository URL**: <https://github.com/Peterayade/EECS-4461-Project.git>  
-
+  - Peter AYADE  
+  - Mingran CHEN  
+  - Shenice THOMAS  
+  
 ---
 
 ## **Section 1: Topic**
@@ -36,7 +35,6 @@
 - Cai, J., & Wohn, D. Y. (2019). Categorizing live streaming moderation tools: An analysis of Twitch. ResearchGate. 
 https://www.researchgate.net/publication/
 335806321_Categorizing_Live_Streaming_Moderation_Tools_An_Analysis_of_Twitch
-
 
 
 ---
