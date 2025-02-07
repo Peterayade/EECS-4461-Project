@@ -19,6 +19,3 @@ GitHub Repository URL**: <https://github.com/Peterayade/EECS-4461-Project.git>
 - 3.3 Algorithms:
 
 ## Section 4: Simulation Anticipated Outcomes
-
-
-
