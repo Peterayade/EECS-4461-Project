@@ -1,5 +1,5 @@
 # Behind the Chat: Agent-Based Modeling of Twitch Mod Bots vs. Spambots
-# GitHub Repository URL**: <https://github.com/Peterayade/EECS-4461-Project.git>  
+GitHub Repository URL**: <https://github.com/Peterayade/EECS-4461-Project.git>  
 
 ## Team Information
 - **Team Number**: Team 5  
