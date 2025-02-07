@@ -5,10 +5,12 @@ on:
     paths:
       - 'docs/Deliverable1/Team*_TopicIdea.md'
       - 'docs/Deliverable1/Team*_TeamExpectations.md'
+      - 'Deliverable2/DEL2B_Proposal/Team*_ProjectProposal.md'
   pull_request:
     paths:
       - 'docs/Deliverable1/Team*_TopicIdea.md'
       - 'docs/Deliverable1/Team*_TeamExpectations.md'
+      - 'Deliverable2/DEL2B_Proposal/Team*_ProjectProposal.md'
 
 permissions:
   contents: write
@@ -33,13 +35,13 @@ jobs:
 
       - name: Convert Markdown to PDF
         run: |
-          for file in docs/Deliverable1/Team*_TopicIdea.md docs/Deliverable1/Team*_TeamExpectations.md; do
+           for file in docs/Deliverable1/Team*_TopicIdea.md docs/Deliverable1/Team*_TeamExpectations.md Deliverable2/DEL2B_Proposal/Team*_ProjectProposal.md; do
             filename=$(basename "$file" .md)
             pandoc "$file" \
               --pdf-engine=xelatex \
               -V geometry:margin=1in \
               -V fontsize=12pt \
-              -o "docs/Deliverable1/$filename.pdf"
+              -o "$dirpath/$filename.pdf"
           done
 
 
@@ -49,8 +51,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/Deliverable1/*.pdf
+           git add docs/Deliverable1/*.pdf Deliverable2/DEL2B_Proposal/*.pdf
           git commit -m "Auto-generated PDF from latest Markdown" || echo "No changes to commit"
           git push origin main --force-with-lease
-
 
