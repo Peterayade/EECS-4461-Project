@@ -9,6 +9,7 @@ GitHub Repository URL**: <https://github.com/Peterayade/EECS-4461-Project.git>
   - Shenice THOMAS  
   
 ---
+
 ## Section 1: Phenomena of Interest
 
 ---
