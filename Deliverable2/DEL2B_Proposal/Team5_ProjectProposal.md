@@ -83,17 +83,13 @@ This model simulates how birds (boids) adjust their flight paths by avoiding obs
 ![Twitch Simulation](https://i.imgur.com/g2WTJpy.png)
 
 ---
- 
-&nbsp;  
-&nbsp;  
-&nbsp;  
 
 <!-- Page Break -->
 <div style="page-break-before: always;"></div>
 
 **References**
 
-&nbsp;&nbsp;&nbsp;&nbsp;Calvaresi, D., Dubovitskaya, A., Taveter, K., Schumacher, M., & Främling, K. (2023). Exploring agent-based chatbots: A &nbsp;&nbsp;&nbsp;&nbsp;systematic literature review. Journal of Ambient Intelligence and Humanized Computing, 14(8), 11207–11226. &nbsp;&nbsp;&nbsp;&nbsp;https://doi.org/10.1007/s12652-023-04626-5 
+&nbsp;&nbsp;&nbsp;&nbsp;Calvaresi, D., Dubovitskaya, A., Taveter, K., Schumacher, M., & Främling, K. (2023). Exploring agent-based chatbots: A systematic literature review. Journal of Ambient Intelligence and Humanized Computing, 14(8), 11207–11226,https://doi.org/10.1007/s12652-023-04626-5 
 
-&nbsp;&nbsp;&nbsp;&nbsp;Cai, J., & Wohn, D. Y. (2019). Categorizing live streaming moderation tools: An analysis of Twitch. International &nbsp;&nbsp;&nbsp;&nbsp;Journal of Interactive Communication Systems and Technologies, 9(2), 36–50. &nbsp;&nbsp;&nbsp;&nbsp;https://doi.org/10.4018/IJICST.2019070103
+&nbsp;&nbsp;&nbsp;&nbsp;Cai, J., & Wohn, D. Y. (2019). Categorizing live streaming moderation tools: An analysis of Twitch. International Journal of Interactive Communication Systems and Technologies, 9(2), 36–50, https://doi.org/10.4018/IJICST.2019070103
 
