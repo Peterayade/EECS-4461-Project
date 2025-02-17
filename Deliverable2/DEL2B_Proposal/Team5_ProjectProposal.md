@@ -14,7 +14,7 @@ GitHub Repository URL**: <https://github.com/Peterayade/EECS-4461-Project.git>
 
 ### Section 1: Phenomenon of Interest
 
-&nbsp;&nbsp;&nbsp;&nbsp;On live streaming platforms like Twitch, chat rooms are the main space for viewers to interact with streamers. But as live streaming becomes more popular, human and bot accounts that send spam or ads have begun to flood in.Human accounts that send ads and spam messages try to “steal” the popularity of the current live-streaming room to achieve their own publicity purposes. Compared with bot accounts, malicious human accounts are fewer in number, but more intelligent and more diﬀicult to be detected and managed by mod bots.
+&nbsp;&nbsp;&nbsp;&nbsp;On live streaming platforms like Twitch, chat rooms are the main space for viewers to interact with streamers. But as live streaming becomes more popular, human and bot accounts that send spam or ads have begun to flood in. Human accounts that send ads and spam messages try to “steal” the popularity of the current live-streaming room to achieve their own publicity purposes. Compared with bot accounts, malicious human accounts are fewer in number, but more intelligent and more diﬀicult to be detected and managed by mod bots.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Bot accounts use automated scripts to send spam ads, post malicious links, and disrupt the chat experience. To deal with these interruptions, Twitch relies on mod bots to automatically detect and block spam. However, this is not just a simple “ban and move on” situation, it's an ongoing battle. Spam bots are constantly evolving to evade detection, and mod bots must constantly adapt to keep up.
 
