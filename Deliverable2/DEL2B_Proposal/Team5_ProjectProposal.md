@@ -1,7 +1,10 @@
 ## Behind the Chat: Agent-Based Modeling of Twitch Mod Bots vs. Spambots
 GitHub Repository URL**: <https://github.com/Peterayade/EECS-4461-Project.git>  
+
 ### Team Information
-- **Team Number**: Team 5  
+
+- **Team Number**: Team 5 
+
 - **Team Members**:  
   - Peter AYADE  
   - Mingran CHEN  
@@ -80,6 +83,10 @@ This model simulates how birds (boids) adjust their flight paths by avoiding obs
 ![Twitch Simulation](https://i.imgur.com/g2WTJpy.png)
 
 ---
+
+<div style="page-break-inside: avoid;">
+  ![Twitch Simulation](https://i.imgur.com/g2WTJpy.png)
+</div>
 
 <!-- Page Break -->
 <div style="page-break-before: always;"></div>
