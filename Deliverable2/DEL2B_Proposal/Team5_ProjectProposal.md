@@ -76,7 +76,7 @@ This model simulates how birds (boids) adjust their flight paths by avoiding obs
 
 ### Section 4: Simulation Anticipated Outcomes
 
-&nbsp;&nbsp;&nbsp;&nbsp;We use the Boid model to simulate the process of Mod bot fighting spam bot. The total number of boids represents the total number of accounts in the live broadcast room, green represents managed accounts, and red represents unmanaged accounts. Through the changes in the number of accounts of different colours, we can observe the process of confrontation.
+&nbsp;&nbsp;&nbsp;&nbsp;We use the Boid model to simulate the process of mod bot fighting spam bot. The total number of boids represents the total number of accounts in the live broadcast room, green represents managed accounts, and red represents unmanaged accounts. Through the changes in the number of accounts of different colours, we can observe the process of confrontation.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Speed ​​can be regarded as the response speed of a mod bot. Vision of Bird can be regarded as the management ability of the mod bot. Minimum Separation can be regarded as the cost of management. Because Minimum Separation has a certain confrontational relationship with Vision range, the larger the separation distance, the smaller the possibility of being included in Vision range, and vice versa.
 
