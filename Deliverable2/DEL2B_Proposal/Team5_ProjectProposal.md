@@ -83,8 +83,7 @@ This model simulates how birds (boids) adjust their flight paths by avoiding obs
 ![Twitch Simulation](https://i.imgur.com/g2WTJpy.png)
 
 ---
-
-&nbsp;  
+ 
 &nbsp;  
 &nbsp;  
 &nbsp;  
