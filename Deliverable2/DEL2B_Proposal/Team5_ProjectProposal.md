@@ -92,6 +92,8 @@ This model simulates how birds (boids) adjust their flight paths by avoiding obs
 <!-- Page Break -->
 <div style="page-break-before: always;"></div>
 
+&nbsp;
+
 **References**
 
 &nbsp;&nbsp;&nbsp;&nbsp;Calvaresi, D., Dubovitskaya, A., Taveter, K., Schumacher, M., & Främling, K. (2023). Exploring agent-based chatbots: A systematic literature review. Journal of Ambient Intelligence and Humanized Computing, 14(8), 11207–11226,https://doi.org/10.1007/s12652-023-04626-5 
