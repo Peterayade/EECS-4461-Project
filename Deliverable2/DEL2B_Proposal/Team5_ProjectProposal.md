@@ -1,11 +1,11 @@
 ## Behind the Chat: Agent-Based Modeling of Twitch Mod Bots vs. Spambots
 GitHub Repository URL**: <https://github.com/Peterayade/EECS-4461-Project.git>  
-## Team Number: Team 5
-
-### Team Members:
-- Peter AYADE
-- Mingran CHEN
-- Shenice THOMAS
+### Team Information
+- **Team Number**: Team 5  
+- **Team Members**:  
+  - Peter AYADE  
+  - Mingran CHEN  
+  - Shenice THOMAS 
 
 ---
 
@@ -50,7 +50,8 @@ GitHub Repository URL**: <https://github.com/Peterayade/EECS-4461-Project.git>
 &nbsp;&nbsp;&nbsp;&nbsp;Spam bots behave like a computer virus, spreading rapidly through chatrooms unless stopped by mod bots, which function like antivirus software. Just as antivirus programs receive security patches to recognize and neutralize new threats, mod bots update their filtering techniques to detect and block evolving spam patterns. Meanwhile, human spammers act like virus mutations, constantly adapting their tactics to evade detection, such as modifying message formats, reducing frequency, or mimicking human behaviour to bypass automated filters. Additionally, streamers act as hubs in the network, influencing how moderation is applied. On Twitch, viewers, moderators, and automated tools are all connected to the streamer, who determines the moderation style. Some streamers enforce strict rules, while others allow more relaxed chat behaviour. Because moderation rules vary by the streamer, they select human moderators, enable mod bots, and set custom chat policies to shape the chat environment. Therefore, just as viruses continuously evolve, requiring constant antivirus updates, the ongoing battle between spam bots and mod bots perfectly aligns with the Virus on a Network analogy.
 
 **§3.6 Affordances:** Live chat affordances include message posting, tagging, liking/reacting using emotes, reporting, and moderator actions such as muting banning and filtering.
-- **Spam Bots:** Takes advantage of affordances like high-frequency posting and lack of - verification to flood chat with unwanted content.
+
+- **Spam Bots:** Takes advantage of affordances like high-frequency posting and lack of verification to flood chat with unwanted content.
 - **Mod Bots:** Use affordances such as auto-filtering, sentiment analysis, and flagging to identify and remove harmful messages.
 
 **Mesa Analogy:** Epstein Civil Violence Model
@@ -58,6 +59,7 @@ GitHub Repository URL**: <https://github.com/Peterayade/EECS-4461-Project.git>
 &nbsp;&nbsp;&nbsp;&nbsp;This model simulates the relationship between law enforcement and rebels in a civil unrest scenario. Spammers act as rebels, attempting to spread content (spam messages), disrupt order, and evade suppression. Meanwhile, mod bots function like law enforcement, working to control, suppress, and remove spam to maintain stability. Just as rebels in a civil unrest situation change tactics to resist authority, spammers continuously adapt by altering message formats or bypassing detection. In response, mod bots must also evolve, improving their filtering techniques to keep up with new spamming strategies. This constant struggle between spammers and mod bots mirrors the dynamic battle between rebels and law enforcement in the Epstein Civil Violence Model.
 
 **§3.3 Algorithms:** Twitch uses automated moderation algorithms to detect and manage spam live chat. These algorithms help mod bots filter messages, prevent abuse, and maintain a good chat experience.
+
 - **Spam Detection Algorithms:** This algorithm scans chat messages and looks for patterns of repeated content, links, or spam behaviour. If a message looks suspicious, it is flagged or removed automatically. 
 - **Reputation-Based Filtering:** This system prioritizes messages from trusted users (e.g., long-time followers, subscribers, verified accounts). New accounts or suspicious users are flagged, meaning their messages might be hidden or reviewed before appearing in chat. The reason for this is that new accounts are more likely to be spam bots, while older accounts have a better reputation.
 - **Adaptive Learning (AI-Based Detection):** Mod bots evolve by learning from past spam patterns. If spammers change tactics (e.g., using slightly different words or posting less frequently to avoid detection), adaptive learning helps mod bots detect new variations.
@@ -78,6 +80,9 @@ This model simulates how birds (boids) adjust their flight paths by avoiding obs
 ![Twitch Simulation](https://i.imgur.com/g2WTJpy.png)
 
 ---
+
+<!-- Page Break -->
+<div style="page-break-before: always;"></div>
 
 **References**
 
