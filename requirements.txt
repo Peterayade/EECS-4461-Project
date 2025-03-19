@@ -1,5 +1,0 @@
-mesa
-solara
-matplotlib
-numpy
-pandas
