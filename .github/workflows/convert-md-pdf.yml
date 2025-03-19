@@ -58,5 +58,3 @@ jobs:
           git add docs/Deliverable1/*.pdf Deliverable2/DEL2B_Proposal/*.pdf Deliverable3/DEL3B_DraftReport/*.pdf
           git commit -m "Auto-generated PDF from latest Markdown" || echo "No changes to commit"
           git push origin main --force-with-lease
-
-
