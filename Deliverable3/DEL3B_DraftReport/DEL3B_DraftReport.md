@@ -126,7 +126,7 @@ Comparison of Different Parameter Settings
 - Spambot IQ= 0.8 | Mod bot IQ= 0.2 ->
  Result: High spambot activity, low ban rates, ineffective moderation.
 
- ![](https://i.imgur.com/uGpxLTE.png)
+![](https://i.imgur.com/uGpxLTE.png)
 
  **Setting 2**
 
@@ -136,7 +136,7 @@ Comparison of Different Parameter Settings
 - Mod bot IQ: 0.8 ->
 Result: More bans, reduced active spambots, better moderation.
 
- ![](https://i.imgur.com/iNZU41h.png)
+![](https://i.imgur.com/iNZU41h.png)
 
  Our early simulation results illustrate how spambots, mod bots, and audience members interact over time within a Twitch-like chatroom environment. The model stabilizes as agents reach equilibrium, where the number of spambots, banned accounts, and quiet audience members remains relatively constant. However, the time to stabilization and the final distribution of agents vary based on parameter settings. Spambot and mod bot vision, mod bot density, and spambot ratio significantly impact the rate of stabilization and the extent of change within the model. When these parameters are increased, the model stabilizes more quickly; when reduced, stabilization takes longer.
 
@@ -151,7 +151,7 @@ Result: More bans, reduced active spambots, better moderation.
 
 Higher spambot vision and density accelerate stabilization, increasing active spambots.
 
- ![](https://i.imgur.com/D9cq7IE.png)
+![](https://i.imgur.com/D9cq7IE.png)
 
  Under the current settings, the model tends to be stable around the 30th step
 
@@ -162,7 +162,7 @@ Higher spambot vision and density accelerate stabilization, increasing active sp
 - Modbot Density: 0.06
 - Spambot Ratio: 60%
 
- ![](https://i.imgur.com/Z8PKty9.png)
+![](https://i.imgur.com/Z8PKty9.png)
 
  Under the current settings, the model stabilizes at about the 120th step, and the fluctuations are large each time
 
