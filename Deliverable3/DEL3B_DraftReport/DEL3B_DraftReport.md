@@ -64,7 +64,9 @@ Our simulation models the interaction between spambots, mod bots, and audience m
 The model consists of three agent types, each following distinct behaviours and decision-making rules:
 
 - Spambots determine whether to post spam based on:
+
 spam_tendency=spam_demand×(1−registration_difficulty)
+
 If spam tendency surpasses a threshold, they actively post spam; otherwise, they remain quiet to avoid bans.
 
 **If (spam_tendency - (risk_aversion - ban_probability)>therhold)**

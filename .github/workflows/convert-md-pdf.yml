@@ -44,7 +44,7 @@ jobs:
               pandoc "$file" \
                 --pdf-engine=xelatex \
                 -V geometry:margin=1in \
-                -V fontsize=12pt \
+                -V fontsize=11pt \
                 -o "$dirpath/$filename.pdf"
             fi
           done
