@@ -1,4 +1,0 @@
-Requirements
-python 
-Mesa library
-seaborn library
