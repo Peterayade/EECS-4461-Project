@@ -3,6 +3,7 @@ At present, our simulation system has been successfully built and can effectivel
 
 
 B.How to run the simulation
+
 1.Setup the environment and install required modules
 Create and activate a virtual environment. Python version 3.11 or higher is required.
 Install Mesa:
@@ -15,12 +16,17 @@ pip install jupyter
 
 Install Seaborn (which is used for data visualization):
 pip install seaborn
+
 2.Download the twitch_streaming_simulation folder and extract to it
+
 3.Open your terminal and change the address to where you put the twitch_streaming_simulation folder
 eg:        cd (where you put the folder)\twitch_streaming_simulation
+
 4.input the following command in the terminal
 solara run app.py
+
 5. If the prototype doesn't open shortly, there is a link in the terminal that should generate after following the instructions copy it and paste it in your browser and the prototype should run 
+
 6.You can drag the visual components to the position you want.
 
 
