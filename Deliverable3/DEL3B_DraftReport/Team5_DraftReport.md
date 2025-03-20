@@ -248,5 +248,3 @@ Validation: Ran parameter tests to analyze bot interactions under different cond
 - **Investigation**: Researched real-world moderation techniques and their implications for AI governance.
 
 - **Project Administration**: Managed team coordination, documentation updates, and repository maintenance.
-
-
