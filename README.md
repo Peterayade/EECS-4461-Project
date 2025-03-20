@@ -1,17 +1,30 @@
-## Twitch Modbot vs. Spambot Simulation (EECS-4461 Winter 2025 Group 5)
+A. Overview of the current implementation state.
+At present, our simulation system has been successfully built and can effectively simulate the interaction process between Spambot, Modbot and audience in Twitch chat room. The whole simulation is based on the transformation of Epstein Civil Violence Mesa Model, which realizes the dynamic interaction of different types of agents. Spambot's behavior is affected by spam demand, registration difficulty and risk control awareness. They will choose when to post spam, while Modbot determines whether to ban by comparing the field of view and IQ. The behavior of the audience depends on the proportion of spam in the chat environment, and they may become passive spammers.
 
-This repo is the group project of EECS-4461 Winter 2025 group 5
-This project explores the ongoing battle between Twitch mod bots and spambots using Agent-Based Modeling (ABM). On live-streaming platforms like Twitch, chat rooms serve as primary spaces for interaction, but they are also vulnerable to spambot invasions. Mod bots work to enforce chat rules by filtering messages, issuing warnings, and blocking spambots, while spambots continuously evolve to bypass detection through message manipulation and human-like behavior. Our project models these interactions using agent-based simulations to understand the dynamics of AI-vs-AI moderation and AI-to-human interactions. The research findings can contribute to better automated moderation strategies, improved spam detection, and enhanced user experiences on live-streaming and social media platforms.
 
-## Further Reading
+B.How to run the simulation
+1.Setup the environment and install required modules
+Create and activate a virtual environment. Python version 3.11 or higher is required.
+Install Mesa:
+pip install --upgrade mesa[rec] 
 
-This model is based adapted from:
 
-[Epstein, J. “Modeling civil violence: An agent-based computational approach”, Proceedings of the National Academy of Sciences, Vol. 99, Suppl. 3, May 14, 2002](http://www.pnas.org/content/99/suppl.3/7243.short)
+Install Jupyter notebook (optional):
+pip install jupyter
 
-A similar model is also included with NetLogo:
 
-Wilensky, U. (2004). NetLogo Rebellion model. http://ccl.northwestern.edu/netlogo/models/Rebellion. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+Install Seaborn (which is used for data visualization):
+pip install seaborn
+2.Download the twitch_streaming_simulation folder and extract to it
+3.Open your terminal and change the address to where you put the twitch_streaming_simulation folder
+eg:        cd (where you put the folder)\twitch_streaming_simulation
+4.input the following command in the terminal
+solara run app.py
+5. If the prototype doesn't open shortly, there is a link in the terminal that should generate after following the instructions copy it and paste it in your browser and the prototype should run 
 
-For additional guidance on setting up Mesa, refer to the official tutorial:
-[Mesa Introduction & Setup Guide](https://mesa.readthedocs.io/stable/tutorials/intro_tutorial.html)
+
+C. Limitations and planned improvements for the next phase
+Although the current simulation system can better present the interaction between AI audit and spam dissemination in Twitch chat environment, it still has certain limitations. The current ban mechanism does not have the function of permanent ban, which allows Spambot to continue to be active after the ban period ends, thus causing periodic spam surges. At the same time, the audience experience has not been quantified. Although the existing model can show the audience's reaction to the spam environment, it fails to introduce a feedback mechanism for the decline of user retention or engagement. Finally, the intelligence level of Modbot AI and Spambot AI is still static, that is, it is set from the beginning and will not change. This fails to reflect the learning ability of AI in reality.
+
+
+The next stage of improvement will focus on these issues. We plan to introduce a permanent ban mechanism and add a ban threshold to ensure that Spambots that have been banned too many times cannot continue to enter the chat room, so as to be more in line with the operation of real platforms. At the same time, we will increase the simulation of audience loss due to misbanning or excessive spam messages, so as to improve the model's fit to real social platforms. In addition, we hope to make AI's learning ability dynamic so that its behavior changes over time.
