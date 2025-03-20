@@ -6,13 +6,13 @@ on:
       - 'docs/Deliverable1/Team*_TopicIdea.md'
       - 'docs/Deliverable1/Team*_TeamExpectations.md'
       - 'Deliverable2/DEL2B_Proposal/Team*_ProjectProposal.md'
-      - 'Deliverable3/DEL3B_DraftReport/DEL3B_DraftReport.md'
+      - 'Deliverable3/DEL3B_DraftReport/Team*_DraftReport.md'
   pull_request:
     paths:
       - 'docs/Deliverable1/Team*_TopicIdea.md'
       - 'docs/Deliverable1/Team*_TeamExpectations.md'
       - 'Deliverable2/DEL2B_Proposal/Team*_ProjectProposal.md'
-      - 'Deliverable3/DEL3B_DraftReport/Del3B_DraftReport.md'
+      - 'Deliverable3/DEL3B_DraftReport/Team*_DraftReport.md'
 
 permissions:
   contents: write
@@ -37,7 +37,7 @@ jobs:
 
       - name: Convert Markdown to PDF
         run: |
-          for file in docs/Deliverable1/Team*_TopicIdea.md docs/Deliverable1/Team*_TeamExpectations.md Deliverable2/DEL2B_Proposal/Team*_ProjectProposal.md Deliverable3/DEL3B_DraftReport/DEL3B_DraftReport.md; do
+          for file in docs/Deliverable1/Team*_TopicIdea.md docs/Deliverable1/Team*_TeamExpectations.md Deliverable2/DEL2B_Proposal/Team*_ProjectProposal.md Deliverable3/DEL3B_DraftReport/Team5_DraftReport.md; do
             if [ -f "$file" ]; then
               filename=$(basename "$file" .md)
               dirpath=$(dirname "$file")
