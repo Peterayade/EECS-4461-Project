@@ -1,32 +1,22 @@
-# Epstein Civil Violence Model
+A. Overview of the current implementation state. At present, our simulation system has been successfully built and can effectively simulate the interaction process between Spambot, Modbot and audience in Twitch chat room. The whole simulation is based on the transformation of Epstein Civil Violence Mesa Model, which realizes the dynamic interaction of different types of agents. Spambot's behavior is affected by spam demand, registration difficulty and risk control awareness. They will choose when to post spam, while Modbot determines whether to ban by comparing the field of view and IQ. The behavior of the audience depends on the proportion of spam in the chat environment, and they may become passive spammers.
 
-## Summary
+B.How to run the simulation
 
-This model is based on Joshua Epstein's simulation of how civil unrest grows and is suppressed. Citizen agents wander the grid randomly, and are endowed with individual risk aversion and hardship levels; there is also a universal regime legitimacy value. There are also Cop agents, who work on behalf of the regime. Cops arrest Citizens who are actively rebelling; Citizens decide whether to rebel based on their hardship and the regime legitimacy, and their perceived probability of arrest.
+1.Setup the environment and install required modules Create and activate a virtual environment. Python version 3.11 or higher is required. Install Mesa: pip install --upgrade mesa[rec]
 
-The model generates mass uprising as self-reinforcing processes: if enough agents are rebelling, the probability of any individual agent being arrested is reduced, making more agents more likely to join the uprising. However, the more rebelling Citizens the Cops arrest, the less likely additional agents become to join.
+Install Jupyter notebook (optional): pip install jupyter
 
-## How to Run
+Install Seaborn (which is used for data visualization): pip install seaborn
 
-To run the model interactively, in this directory, run the following command
+2.Download the twitch_streaming_simulation folder and extract to it
 
-```
-    $ solara run app.py
-```
+3.Open your terminal and change the address to where you put the twitch_streaming_simulation folder eg: cd (where you put the folder)\twitch_streaming_simulation
 
-## Files
+4.input the following command in the terminal solara run app.py
 
-* ``model.py``: Core model code.
-* ``agent.py``: Agent classes.
-* ``app.py``: Sets up the interactive visualization.
-* ``Epstein Civil Violence.ipynb``: Jupyter notebook conducting some preliminary analysis of the model.
+If the prototype doesn't open shortly, there is a link in the terminal that should generate after following the instructions copy it and paste it in your browser and the prototype should run
+6.You can drag the visual components to the position you want.
 
-## Further Reading
+C. Limitations and planned improvements for the next phase Although the current simulation system can better present the interaction between AI audit and spam dissemination in Twitch chat environment, it still has certain limitations. The current ban mechanism does not have the function of permanent ban, which allows Spambot to continue to be active after the ban period ends, thus causing periodic spam surges. At the same time, the audience experience has not been quantified. Although the existing model can show the audience's reaction to the spam environment, it fails to introduce a feedback mechanism for the decline of user retention or engagement. Finally, the intelligence level of Modbot AI and Spambot AI is still static, that is, it is set from the beginning and will not change. This fails to reflect the learning ability of AI in reality.
 
-This model is based adapted from:
-
-[Epstein, J. “Modeling civil violence: An agent-based computational approach”, Proceedings of the National Academy of Sciences, Vol. 99, Suppl. 3, May 14, 2002](http://www.pnas.org/content/99/suppl.3/7243.short)
-
-A similar model is also included with NetLogo:
-
-Wilensky, U. (2004). NetLogo Rebellion model. http://ccl.northwestern.edu/netlogo/models/Rebellion. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
+The next stage of improvement will focus on these issues. We plan to introduce a permanent ban mechanism and add a ban threshold to ensure that Spambots that have been banned too many times cannot continue to enter the chat room, so as to be more in line with the operation of real platforms. At the same time, we will increase the simulation of audience loss due to misbanning or excessive spam messages, so as to improve the model's fit to real social platforms. In addition, we hope to make AI's learning ability dynamic so that its behavior changes over time.
