@@ -21,6 +21,7 @@ eg:        cd (where you put the folder)\twitch_streaming_simulation
 4.input the following command in the terminal
 solara run app.py
 5. If the prototype doesn't open shortly, there is a link in the terminal that should generate after following the instructions copy it and paste it in your browser and the prototype should run 
+6.You can drag the visual components to the position you want.
 
 
 C. Limitations and planned improvements for the next phase
