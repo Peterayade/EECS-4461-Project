@@ -135,7 +135,7 @@ Grid graph can clearly show us the status and number of each agent in the curren
 
 ![Grid Visualization](https://i.imgur.com/Ijy4Zj0.png)
 
-**Plot graph**
+**Plot graph:**
 
 The purpose of the plot graph is to depict the changing trends of agents in different states, making it easier for us to observe the mutual influence of interactions between agents.
 
