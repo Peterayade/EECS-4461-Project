@@ -63,4 +63,3 @@ jobs:
           git commit -m "Auto-generated PDF from latest Markdown" || echo "No changes to commit"
           git push origin main --force-with-lease
 
-          
