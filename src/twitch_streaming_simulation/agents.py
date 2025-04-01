@@ -10,6 +10,7 @@ class CitizenState(Enum):
     SPAMBOT_QUIET = 2
     BANNED = 3
     AUDIENCE_QUIET=4
+    BANNED_FOREVER=5
 
 
 class EpsteinAgent(mesa.experimental.cell_space.CellAgent):
@@ -86,6 +87,7 @@ class Citizen(EpsteinAgent):
 
         self.iq=random.uniform(0, iq)
         self.identity=random.choices([0, 1], weights=[model.spambot_ratio, 100-model.spambot_ratio])[0]
+        self.ban_count = 0
 
     def step(self):
         """
@@ -168,8 +170,16 @@ class Cop(EpsteinAgent):
                 active_neighbors.append(agent)
         if active_neighbors:
             arrestee = self.random.choice(active_neighbors)
-            arrestee.jail_sentence = self.random.randint(0, self.max_jail_term)
+
             if self.iq > arrestee.iq:
+                arrestee.ban_count += 1
                 arrestee.state = CitizenState.BANNED
+                arrestee.jail_sentence = self.random.randint(0, self.max_jail_term)
+                if arrestee.ban_count >= self.model.ban_forever_time and self.model.ban_forever_time!=-1:
+                    arrestee.jail_sentence=9999
+                    arrestee.state=CitizenState.BANNED_FOREVER
+            else:
+                #iq upgrade ,dynamic,to simulate ai learning during adversial process between mod bot and spam bot
+                self.iq+=0.1
 
         self.move()

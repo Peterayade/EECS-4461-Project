@@ -59,6 +59,8 @@ class EpsteinCivilViolence(mesa.Model):
         self.movement = movement
         self.max_iters = max_iters
         self.spambot_ratio=spambot_ratio
+        self.ban_forever_time = ban_forever_time
+
 
         self.grid = mesa.experimental.cell_space.OrthogonalVonNeumannGrid(
             (width, height), capacity=1, torus=True, random=self.random
@@ -69,6 +71,7 @@ class EpsteinCivilViolence(mesa.Model):
             "spambot_quiet": lambda m: sum(1 for a in m.agents_by_type[Citizen] if a.state == CitizenState.SPAMBOT_QUIET),
             "banned": lambda m: sum(1 for a in m.agents_by_type[Citizen] if a.state == CitizenState.BANNED),
             "audience_quiet": lambda m: sum(1 for a in m.agents_by_type[Citizen] if a.state == CitizenState.AUDIENCE_QUIET),
+            "banned_forever": lambda m: sum(1 for a in m.agents_by_type[Citizen] if a.state == CitizenState.BANNED_FOREVER),
         }
 
         agent_reporters = {

@@ -25,9 +25,9 @@ def PieChart(model):
         return solara.Text("No data collected yet.")
 
     data = df.iloc[-1]
-    labels = ["Active", "SPAMBOT Quiet", "Banned", "Audience Quiet"]
-    sizes = [data["active"], data["spambot_quiet"], data["banned"], data["audience_quiet"]]
-    colors = ["#FE6100", "#648FFF", "#808080", "#33f561"]
+    labels = ["Active", "SPAMBOT Quiet", "Banned", "Audience Quiet","Banned forever"]
+    sizes = [data["active"], data["spambot_quiet"], data["banned"], data["audience_quiet"],data["banned_forever"]]
+    colors = ["#FE6100", "#648FFF", "#808080", "#33f561","#800080"]
 
 
     if sum(sizes) == 0:
@@ -50,6 +50,7 @@ agent_colors = {
     CitizenState.SPAMBOT_QUIET: "#648FFF",
     CitizenState.BANNED: "#808080",
     CitizenState.AUDIENCE_QUIET:"#33f561",
+    CitizenState.BANNED_FOREVER:"#800080",
 }
 
 
@@ -93,7 +94,7 @@ model_params = {
     "max_jail_term": Slider("Max ban time", 30, 0, 50, 1),
     "spambot_iq": Slider("Spambot IQ Range", 0.7, 0.0, 0.9, 0.1),
     "modbot_iq": Slider("Modbot IQ", 0.7, 0.0, 0.9, 0.1),
-    "ban_forever_time": Slider("Times of ban before forever ban", 7, 1, 10, 1),
+    "ban_forever_time": Slider("Times of ban before forever ban", 7, -1, 10, 1),
 }
 
 space_component = make_space_component(
