@@ -8,6 +8,7 @@ on:
       - 'Deliverable2/DEL2B_Proposal/Team*_ProjectProposal.md'
       - 'Deliverable3/DEL3B_DraftReport/Team*_DraftReport.md'
       - 'Deliverable4/DEL4B_FinalReport/Team*_FinalReport.md'
+
   pull_request:
     paths:
       - 'docs/Deliverable1/Team*_TopicIdea.md'
@@ -40,6 +41,7 @@ jobs:
       - name: Convert Markdown to PDF
         run: |
           for file in docs/Deliverable1/Team*_TopicIdea.md docs/Deliverable1/Team*_TeamExpectations.md Deliverable2/DEL2B_Proposal/Team*_ProjectProposal.md Deliverable3/DEL3B_DraftReport/Team5_DraftReport.md Deliverable4/DEL4B_FinalReport/Team5_FinalReport.md; do
+
             if [ -f "$file" ]; then
               filename=$(basename "$file" .md)
               dirpath=$(dirname "$file")
