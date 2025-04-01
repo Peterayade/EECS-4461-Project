@@ -228,6 +228,8 @@ When an account is banned twice, it will be banned immediately and permanently.
 
 ![Ban Table](https://i.imgur.com/IICMeDD.png)
 
+
+
 ![Pie Chart Representation](https://i.imgur.com/MGEKe60.png)
 
 After analysis, this parameter has a huge impact on all results. When this parameter is small (1-5), Modbot will ban a large number of accounts in a short period of time. This makes the time for the live broadcast room to reach a stable state very short. At the same time, after the live broadcast room reaches stability, the interval between fluctuations is longer and the fluctuation amplitude is smaller.
@@ -242,13 +244,18 @@ However, the actual situation we observed was that after the system was in a sta
 
 As shown in the figure below, after 25 steps, the model has tended to a relatively stable state, but the plot still fluctuates. In particular, there are large changes at about 30, 60, 100, 125, 175, and 200 steps.
 
+
 ![Plot Chart Fluctuations](https://i.imgur.com/i9W0IUD.png)
+
+
 
 After analysis, the possible reasons for this phenomenon are as follows:
 
 1. Modbot banned many spambot accounts at the same time, and their ban time was exactly the same. This means that many spambot accounts will be unbanned at the same time.
 
 2. Many spambots turned to an active state at the same time, which means that a large amount of spam information will suddenly appear in the live broadcast room. This will cause many audiences to mistakenly believe this information and participate in spam activities. This, in turn, will lead to an increase in spam information. Such a domino effect has led to emergencies.
+
+
 
 **§4. Ethical & Societal Reflections**
 
