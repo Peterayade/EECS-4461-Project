@@ -188,16 +188,16 @@ Times of ban before forever ban: 7
 
 High registration difficulty
 
-![High registration difficulty](https://i.imgur.com/SRuIIir.png)
+![High Registration Difficulty](https://i.imgur.com/SRuIIir.png)
 
 
-![High registration difficulty](https://i.imgur.com/gyfQdWn.png)
+![High Registration Difficulty](https://i.imgur.com/gyfQdWn.png)
 
 Low registration difficulty
 
-![Low registration difficulty](https://i.imgur.com/S61SXL0.png)
+![Low Registration Difficulty](https://i.imgur.com/S61SXL0.png)
 
-![Low registration difficulty](https://i.imgur.com/Q9VEG4Y.png)
+![Low Registration Difficulty](https://i.imgur.com/Q9VEG4Y.png)
 
 Based on the observed results, we found that the greater the registration difficulty, the shorter the time it takes for the system to stabilize, and the lower the frequency and magnitude of subsequent emergencies. The opposite is true. The greater the registration difficulty, the more spambots will value their accounts and the more cautious they will be. This also results in fewer accounts being permanently banned.
 
@@ -205,16 +205,16 @@ Based on the observed results, we found that the greater the registration diffic
 
 High spambot ratio
 
-![High registration difficulty](https://i.imgur.com/I1F0IM8.png)
+![High Registration Difficulty](https://i.imgur.com/I1F0IM8.png)
 
 
-![High registration difficulty](https://i.imgur.com/x8W608k.png)
+![High Registration Difficulty](https://i.imgur.com/x8W608k.png)
 
 Low spambot ratio
 
-![Low spambot ratio](https://i.imgur.com/UGwzRIE.png)
+![Low Spambot Ratio](https://i.imgur.com/UGwzRIE.png)
 
-![Low spambot ratio](https://i.imgur.com/2rkaJH5.png)
+![Low Spambot Ratio](https://i.imgur.com/2rkaJH5.png)
 
 Based on observations, we can analyze that when the proportion of spambots in the live broadcast room system is small, the system will stabilize faster, and the frequency and magnitude of emergencies will be smaller. This is because when the number of spambots is small, the audience is not easily deceived by spambots.
 
@@ -222,13 +222,13 @@ Based on observations, we can analyze that when the proportion of spambots in th
 
 An account will be permanently banned only after it has been banned lots of times.
 
-![Ban table](https://i.imgur.com/E1ZJmPM.png)
+![Ban Table](https://i.imgur.com/E1ZJmPM.png)
 
 When an account is banned twice, it will be banned immediately and permanently.
 
-![Ban table](https://i.imgur.com/IICMeDD.png)
+![Ban Table](https://i.imgur.com/IICMeDD.png)
 
-![Pie chart representation](https://i.imgur.com/MGEKe60.png)
+![Pie Chart Representation](https://i.imgur.com/MGEKe60.png)
 
 After analysis, this parameter has a huge impact on all results. When this parameter is small (1-5), Modbot will ban a large number of accounts in a short period of time. This makes the time for the live broadcast room to reach a stable state very short. At the same time, after the live broadcast room reaches stability, the interval between fluctuations is longer and the fluctuation amplitude is smaller.
 
@@ -242,7 +242,7 @@ However, the actual situation we observed was that after the system was in a sta
 
 As shown in the figure below, after 25 steps, the model has tended to a relatively stable state, but the plot still fluctuates. In particular, there are large changes at about 30, 60, 100, 125, 175, and 200 steps.
 
-![Plot chat fluctuations](https://i.imgur.com/i9W0IUD.png)
+![Plot Chart Fluctuations](https://i.imgur.com/i9W0IUD.png)
 
 After analysis, the possible reasons for this phenomenon are as follows:
 
