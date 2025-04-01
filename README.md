@@ -10,15 +10,15 @@ Install Jupyter notebook (optional): pip install jupyter
 
 Install Seaborn (which is used for data visualization): pip install seaborn
 
-2)Download the twitch_streaming_simulation folder and extract it
+2.Download the twitch_streaming_simulation folder and extract it
 
-3)Open your terminal and change the address to where you put the twitch_streaming_simulation folder eg: cd (where you put the folder)\twitch_streaming_simulation
+3.Open your terminal and change the address to where you put the twitch_streaming_simulation folder eg: cd (where you put the folder)\twitch_streaming_simulation
 
-4)Input the following command in the terminal solara run app.py
+4.Input the following command in the terminal solara run app.py
 
-5)If the prototype doesn't open shortly, there is a link in the terminal that should generate after following the instructions, copy and paste it into your browser, and the prototype should run
+5.If the prototype doesn't open shortly, there is a link in the terminal that should generate after following the instructions, copy and paste it into your browser, and the prototype should run
 
-6)You can drag the visual component to the position you want
+6.You can drag the visual component to the position you want
 
 §C. Limitations and planned improvements for the next phase: Although the current simulation system can better present the interaction between AI audit and spam dissemination in the Twitch chat environment, it still has certain limitations. The current ban mechanism does not have the function of a permanent ban, which allows Spambot to continue to be active after the ban period ends, thus causing periodic spam surges. At the same time, the audience experience has not been quantified. Although the existing model can show the audience's reaction to the spam environment, it fails to introduce a feedback mechanism for the decline of user retention or engagement. Finally, the intelligence level of Modbot AI and Spambot AI is still static; that is, it is set from the beginning and will not change. This fails to reflect the learning ability of AI in reality.
 
