@@ -2,7 +2,7 @@
 
 §B. How to run the simulation
 
-1)Setup the environment and install the required modules. Create and activate a virtual environment. Python version 3.11 or higher is required.
+1. Setup the environment and install the required modules. Create and activate a virtual environment. Python version 3.11 or higher is required.
 
 Install Mesa: pip install --upgrade mesa[rec]
 
