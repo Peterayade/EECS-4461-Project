@@ -36,7 +36,7 @@ jobs:
           git reset --hard origin/main 
 
       - name: Install Pandoc and Dependencies
-        run: sudo apt-get update sudo apt-get install -y pandoc texlive-xetex
+        run: sudo apt-get update && sudo apt-get install -y pandoc texlive-xetex
           
       - name: Convert Markdown to PDF
         run: |
