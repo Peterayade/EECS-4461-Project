@@ -230,7 +230,7 @@ When an account is banned twice, it will be banned immediately and permanently.
 
 
 
-![Pie Chart Representation](https://i.imgur.com/MGEKe60.png)
+![](https://i.imgur.com/MGEKe60.png)
 
 After analysis, this parameter has a huge impact on all results. When this parameter is small (1-5), Modbot will ban a large number of accounts in a short period of time. This makes the time for the live broadcast room to reach a stable state very short. At the same time, after the live broadcast room reaches stability, the interval between fluctuations is longer and the fluctuation amplitude is smaller.
 
@@ -245,7 +245,7 @@ However, the actual situation we observed was that after the system was in a sta
 As shown in the figure below, after 25 steps, the model has tended to a relatively stable state, but the plot still fluctuates. In particular, there are large changes at about 30, 60, 100, 125, 175, and 200 steps.
 
 
-![Plot Chart Fluctuations](https://i.imgur.com/i9W0IUD.png)
+![](https://i.imgur.com/i9W0IUD.png)
 
 
 
