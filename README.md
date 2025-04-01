@@ -19,7 +19,7 @@ pip install seaborn
 eg:       
  cd (where you put the folder)\twitch_streaming_simulation  
 
-4.input the following command in the terminal
+4.Input the following command in the terminal
 solara run app.py
 
 5.If the prototype doesn't open shortly, there is a link in the terminal that should generate after following the instructions, copy and paste it into your browser, and the prototype should run
