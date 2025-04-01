@@ -127,37 +127,27 @@ Our model can observe and collect the following data through visualization:
 
 Colour explanation: In our visualization component, blue represents spambot in quiet state, green represents audience in quiet state, black represents modbot, gray represents temporarily banned accounts (including spambot and audience), and purple represents permanently banned accounts.
 
-<p align="center">
-  <img src="https://i.imgur.com/sCecUAd.png" style="width:450px;" />
-</p>
+![Colour Visualization](https://i.imgur.com/sCecUAd.png)
 
 **Grid graph:**
 
 Grid graph can clearly show us the status and number of each agent in the current simulation system.
 
-<p align="center">
-  <img src="https://i.imgur.com/Ijy4Zj0.png" style="width:450px;" />
-</p>
-
+![Grid Visualization](https://i.imgur.com/Ijy4Zj0.png)
 
 **Plot graph**
 
 The purpose of the plot graph is to depict the changing trends of agents in different states, making it easier for us to observe the mutual influence of interactions between agents.
 
-<p align="center">
-  <img src="https://i.imgur.com/wCfPWGv.png" style="width:450px;" />
-</p>
+![Plot Visualization](https://i.imgur.com/wCfPWGv.png)
 
 **Pie chart:**
 
 The purpose of the pie chart is to provide real-time feedback on the proportion of agents currently in different states.
 
-<p align="center">
-  <img src="https://i.imgur.com/9Yolxu8.png" style="width:450px;" />
-</p>
+![Pie Chart Visualization](https://i.imgur.com/9Yolxu8.png)
 
 The key issue encountered in the visualization process is that a large number of different agents and their status need to be aggregated and analyzed, and then assigned to different visualization modules. This process is quite difficult, and program errors often occur, resulting in inconsistent data between visualization modules. This key issue has been resolved.
-
 
 **§3. Observations & Results**
 
@@ -194,75 +184,51 @@ Modbot IQ: 0.7
 
 Times of ban before forever ban: 7
 
-**1. Change registration difficulty**
+**1. Change of registration difficulty**
 
 High registration difficulty
 
-<p align="center">
-  <img src="https://i.imgur.com/SRuIIir.png" style="width:450px;" />
-</p>
+![High registration difficulty](https://i.imgur.com/SRuIIir.png)
 
-<p align="center">
-  <img src="https://i.imgur.com/gyfQdWn.png" style="width:450px;" />
-</p>
+
+![High registration difficulty](https://i.imgur.com/gyfQdWn.png)
 
 Low registration difficulty
 
-<p align="center">
-  <img src="https://i.imgur.com/S61SXL0.png" style="width:450px;" />
-</p>
+![Low registration difficulty](https://i.imgur.com/S61SXL0.png)
 
-<p align="center">
-  <img src="https://i.imgur.com/Q9VEG4Y.png" style="width:450px;" />
-</p>
+![Low registration difficulty](https://i.imgur.com/Q9VEG4Y.png)
 
 Based on the observed results, we found that the greater the registration difficulty, the shorter the time it takes for the system to stabilize, and the lower the frequency and magnitude of subsequent emergencies. The opposite is true. The greater the registration difficulty, the more spambots will value their accounts and the more cautious they will be. This also results in fewer accounts being permanently banned.
 
-**2. Change the Spambot ratio**
+**2. Change of the Spambot ratio**
 
 High spambot ratio
 
-<p align="center">
-  <img src="https://i.imgur.com/I1F0IM8.png" style="width:450px;" />
-</p>
+![High registration difficulty](https://i.imgur.com/I1F0IM8.png)
 
-<p align="center">
-  <img src="https://i.imgur.com/x8W608k.png" style="width:450px;" />
-</p>
+
+![High registration difficulty](https://i.imgur.com/x8W608k.png)
 
 Low spambot ratio
 
-<p align="center">
-  <img src="https://i.imgur.com/UGwzRIE.png" style="width:450px;" />
-</p>
+![Low spambot ratio](https://i.imgur.com/UGwzRIE.png)
 
-<p align="center">
-  <img src="https://i.imgur.com/2rkaJH5.png" style="width:450px;" />
-</p>
+![Low spambot ratio](https://i.imgur.com/2rkaJH5.png)
 
 Based on observations, we can analyze that when the proportion of spambots in the live broadcast room system is small, the system will stabilize faster, and the frequency and magnitude of emergencies will be smaller. This is because when the number of spambots is small, the audience is not easily deceived by spambots.
 
-**3. Change Times of ban before forever ban**
+**3. Change times of ban before forever ban**
 
 An account will be permanently banned only after it has been banned lots of times.
 
-<p align="center">
-  <img src="https://i.imgur.com/E1ZJmPM.png" style="width:450px;" />
-</p>
-
-<p align="center">
-  <img src="https://i.imgur.com/7z0QDvR.png" style="width:450px;" />
-</p>
+![Ban table](https://i.imgur.com/E1ZJmPM.png)
 
 When an account is banned twice, it will be banned immediately and permanently.
 
-<p align="center">
-  <img src="https://i.imgur.com/IICMeDD.png" style="width:450px;" />
-</p>
+![Ban table](https://i.imgur.com/IICMeDD.png)
 
-<p align="center">
-  <img src="https://i.imgur.com/MGEKe60.png" style="width:450px;" />
-</p>
+![Pie chart representation](https://i.imgur.com/MGEKe60.png)
 
 After analysis, this parameter has a huge impact on all results. When this parameter is small (1-5), Modbot will ban a large number of accounts in a short period of time. This makes the time for the live broadcast room to reach a stable state very short. At the same time, after the live broadcast room reaches stability, the interval between fluctuations is longer and the fluctuation amplitude is smaller.
 
@@ -276,9 +242,7 @@ However, the actual situation we observed was that after the system was in a sta
 
 As shown in the figure below, after 25 steps, the model has tended to a relatively stable state, but the plot still fluctuates. In particular, there are large changes at about 30, 60, 100, 125, 175, and 200 steps.
 
-<p align="center">
-  <img src="https://i.imgur.com/i9W0IUD.png" style="width:450px;" />
-</p>
+![Plot chat fluctuations](https://i.imgur.com/i9W0IUD.png)
 
 After analysis, the possible reasons for this phenomenon are as follows:
 
