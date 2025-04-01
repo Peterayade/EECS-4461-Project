@@ -36,8 +36,8 @@ jobs:
           git reset --hard origin/main 
 
       - name: Install Pandoc and Dependencies
-        run: sudo apt-get install -y pandoc texlive-xetex
-
+        run: sudo apt-get update sudo apt-get install -y pandoc texlive-xetex
+          
       - name: Convert Markdown to PDF
         run: |
           for file in docs/Deliverable1/Team*_TopicIdea.md docs/Deliverable1/Team*_TeamExpectations.md Deliverable2/DEL2B_Proposal/Team*_ProjectProposal.md Deliverable3/DEL3B_DraftReport/Team5_DraftReport.md Deliverable4/DEL4B_FinalReport/Team5_FinalReport.md; do
